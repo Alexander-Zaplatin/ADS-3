@@ -45,12 +45,12 @@ stackCh.pop();
 if (stackCh.isEmpty()) 
 t = 0;
 } else {
-while (!stackCh.isEmpty() && Priority(stackCh.get() >= Pr) {
+while (!stackCh.isEmpty() && Priority(stackCh.get()) >= Pr) {
 pstfx.push_back(stackCh.get());
 pstfx.push_back(' ');
 stackCh.pop();
 }
-if (stackCh.isEmpty()
+if (stackCh.isEmpty())
 t = x;
 stackCh.push(x);
 }
