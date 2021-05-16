@@ -21,7 +21,7 @@ char Top = 0;
         int pr;
         pr = priority(inf[i]);
         if (pr > -1) {
-            if ((pr == 0 || pr > priority(Top) || 
+            if ((pr == 0 || pr > priority(Top) ||
             stack.isEmpty()) && inf[i] != ')') {
             if (stack.isEmpty())
                 Top = inf[i];
