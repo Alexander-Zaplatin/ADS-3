@@ -21,7 +21,8 @@ char Top = 0;
         int pr;
         pr = priority(inf[i]);
         if (pr > -1) {
-            if ((pr == 0 || pr > priority(Top) || stack1.isEmpty()) && inf[i] != ')') {
+            if ((pr == 0 || pr > priority(Top) || 
+            stack.isEmpty()) && inf[i] != ')') {
             if (stack.isEmpty())
                 Top = inf[i];
             stack.push(inf[i]);
@@ -92,14 +93,14 @@ TStack<int> stack2;
             int Num1 = stack2.get();
             stack2.pop();
             int res = calculating(Op, Num1, Num2);
-            stack2.push(result);
+            stack2.push(res);
         }
         if (i < pst.size())
             x = pst[++i];
         else
             x = 0;
     }
-    result = stack2.get();
+    res = stack2.get();
     stack2.pop();
-    return result;
+    return res;
 }
